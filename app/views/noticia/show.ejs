@@ -39,6 +39,21 @@
   com os dados da notícia presentes no banco de dados.
   */
 
+$(document).ready(function(){
+
+  var data = { 'noticia_id' : <%= noticia_id %>};
+
+$.ajax({
+
+  type : 'post',
+  url : '/noticia/getById',
+  data : data;
+}).done(function(json){
+  console.log(json);
+})
+
+})
+
 </script>
 
 </html>

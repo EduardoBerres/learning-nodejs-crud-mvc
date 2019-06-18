@@ -2,7 +2,7 @@ var mysql = require('mysql');
 
 var mysqlConnection = function(){
     return mysql.createConnection({
-        host: 'localhost',
+        host: 'acad01.lages.ifsc.edu.br',
         port: '3306',
         user: 'aluno1',
         password: 'aluno',
